@@ -49,10 +49,13 @@ namespace <#=fullNamespace #>
 		Guid Id{ get; }
 
 		[SitecoreInfo(SitecoreInfoType.Language)]
-        Language Language{ get; }
+        	Language Language{ get; }
 
-        [SitecoreInfo(SitecoreInfoType.Version)]
-        int Version { get; }
+        	[SitecoreInfo(SitecoreInfoType.Version)]
+        	int Version { get; }
+        
+        	[SitecoreInfo(SitecoreInfoType.Url)]
+        	string URL { get; }
 
 	}
 
@@ -62,9 +65,12 @@ namespace <#=fullNamespace #>
 		public virtual Guid Id{ get; private set;}
 
 		[SitecoreInfo(SitecoreInfoType.Language)]
-        public virtual Language Language{ get; private set; }
+        	public virtual Language Language{ get; private set; }
 
-        [SitecoreInfo(SitecoreInfoType.Version)]
-        public virtual int Version { get; private set; }
+        	[SitecoreInfo(SitecoreInfoType.Version)]
+        	public virtual int Version { get; private set; }
+        
+ 		[SitecoreInfo(SitecoreInfoType.Url)]
+		public virtual string URL { get; private set; }
 	}
 }
